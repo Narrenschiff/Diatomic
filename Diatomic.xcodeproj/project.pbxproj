@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CEF2D5C189EA9C800D95D0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEF2D5B189EA9C800D95D0E /* Foundation.framework */; };
+		3CEF2D5E189EA9C800D95D0E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEF2D5D189EA9C800D95D0E /* CoreGraphics.framework */; };
+		3CEF2D60189EA9C800D95D0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEF2D5F189EA9C800D95D0E /* UIKit.framework */; };
+		3CEF2D62189EA9C800D95D0E /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEF2D61189EA9C800D95D0E /* SpriteKit.framework */; };
+		3CEF2D68189EA9C800D95D0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2D66189EA9C800D95D0E /* InfoPlist.strings */; };
+		3CEF2D6A189EA9C800D95D0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF2D69189EA9C800D95D0E /* main.m */; };
+		3CEF2D6E189EA9C800D95D0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF2D6D189EA9C800D95D0E /* AppDelegate.m */; };
+		3CEF2D71189EA9C800D95D0E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2D6F189EA9C800D95D0E /* Main_iPhone.storyboard */; };
+		3CEF2D74189EA9C800D95D0E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2D72189EA9C800D95D0E /* Main_iPad.storyboard */; };
+		3CEF2D77189EA9C800D95D0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF2D76189EA9C800D95D0E /* ViewController.m */; };
+		3CEF2D7A189EA9C800D95D0E /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF2D79189EA9C800D95D0E /* MyScene.m */; };
+		3CEF2D7C189EA9C800D95D0E /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2D7B189EA9C800D95D0E /* Spaceship.png */; };
+		3CEF2D7E189EA9C800D95D0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2D7D189EA9C800D95D0E /* Images.xcassets */; };
+		3CEF2D85189EA9C800D95D0E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEF2D84189EA9C800D95D0E /* XCTest.framework */; };
+		3CEF2D86189EA9C800D95D0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEF2D5B189EA9C800D95D0E /* Foundation.framework */; };
+		3CEF2D87189EA9C800D95D0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEF2D5F189EA9C800D95D0E /* UIKit.framework */; };
+		3CEF2D8F189EA9C800D95D0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2D8D189EA9C800D95D0E /* InfoPlist.strings */; };
+		3CEF2D91189EA9C800D95D0E /* DiatomicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF2D90189EA9C800D95D0E /* DiatomicTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CEF2D88189EA9C800D95D0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CEF2D50189EA9C800D95D0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CEF2D57189EA9C800D95D0E;
+			remoteInfo = Diatomic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3CEF2D58189EA9C800D95D0E /* Diatomic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diatomic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEF2D5B189EA9C800D95D0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3CEF2D5D189EA9C800D95D0E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3CEF2D5F189EA9C800D95D0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3CEF2D61189EA9C800D95D0E /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		3CEF2D65189EA9C800D95D0E /* Diatomic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Diatomic-Info.plist"; sourceTree = "<group>"; };
+		3CEF2D67189EA9C800D95D0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3CEF2D69189EA9C800D95D0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3CEF2D6B189EA9C800D95D0E /* Diatomic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Diatomic-Prefix.pch"; sourceTree = "<group>"; };
+		3CEF2D6C189EA9C800D95D0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3CEF2D6D189EA9C800D95D0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3CEF2D70189EA9C800D95D0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		3CEF2D73189EA9C800D95D0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		3CEF2D75189EA9C800D95D0E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3CEF2D76189EA9C800D95D0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3CEF2D78189EA9C800D95D0E /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		3CEF2D79189EA9C800D95D0E /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		3CEF2D7B189EA9C800D95D0E /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		3CEF2D7D189EA9C800D95D0E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3CEF2D83189EA9C800D95D0E /* DiatomicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiatomicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEF2D84189EA9C800D95D0E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3CEF2D8C189EA9C800D95D0E /* DiatomicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiatomicTests-Info.plist"; sourceTree = "<group>"; };
+		3CEF2D8E189EA9C800D95D0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3CEF2D90189EA9C800D95D0E /* DiatomicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiatomicTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CEF2D55189EA9C800D95D0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEF2D5E189EA9C800D95D0E /* CoreGraphics.framework in Frameworks */,
+				3CEF2D60189EA9C800D95D0E /* UIKit.framework in Frameworks */,
+				3CEF2D62189EA9C800D95D0E /* SpriteKit.framework in Frameworks */,
+				3CEF2D5C189EA9C800D95D0E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEF2D80189EA9C800D95D0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEF2D85189EA9C800D95D0E /* XCTest.framework in Frameworks */,
+				3CEF2D87189EA9C800D95D0E /* UIKit.framework in Frameworks */,
+				3CEF2D86189EA9C800D95D0E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CEF2D4F189EA9C800D95D0E = {
+			isa = PBXGroup;
+			children = (
+				3CEF2D63189EA9C800D95D0E /* Diatomic */,
+				3CEF2D8A189EA9C800D95D0E /* DiatomicTests */,
+				3CEF2D5A189EA9C800D95D0E /* Frameworks */,
+				3CEF2D59189EA9C800D95D0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CEF2D59189EA9C800D95D0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF2D58189EA9C800D95D0E /* Diatomic.app */,
+				3CEF2D83189EA9C800D95D0E /* DiatomicTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CEF2D5A189EA9C800D95D0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF2D5B189EA9C800D95D0E /* Foundation.framework */,
+				3CEF2D5D189EA9C800D95D0E /* CoreGraphics.framework */,
+				3CEF2D5F189EA9C800D95D0E /* UIKit.framework */,
+				3CEF2D61189EA9C800D95D0E /* SpriteKit.framework */,
+				3CEF2D84189EA9C800D95D0E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CEF2D63189EA9C800D95D0E /* Diatomic */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF2D6C189EA9C800D95D0E /* AppDelegate.h */,
+				3CEF2D6D189EA9C800D95D0E /* AppDelegate.m */,
+				3CEF2D6F189EA9C800D95D0E /* Main_iPhone.storyboard */,
+				3CEF2D72189EA9C800D95D0E /* Main_iPad.storyboard */,
+				3CEF2D75189EA9C800D95D0E /* ViewController.h */,
+				3CEF2D76189EA9C800D95D0E /* ViewController.m */,
+				3CEF2D78189EA9C800D95D0E /* MyScene.h */,
+				3CEF2D79189EA9C800D95D0E /* MyScene.m */,
+				3CEF2D7B189EA9C800D95D0E /* Spaceship.png */,
+				3CEF2D7D189EA9C800D95D0E /* Images.xcassets */,
+				3CEF2D64189EA9C800D95D0E /* Supporting Files */,
+			);
+			path = Diatomic;
+			sourceTree = "<group>";
+		};
+		3CEF2D64189EA9C800D95D0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF2D65189EA9C800D95D0E /* Diatomic-Info.plist */,
+				3CEF2D66189EA9C800D95D0E /* InfoPlist.strings */,
+				3CEF2D69189EA9C800D95D0E /* main.m */,
+				3CEF2D6B189EA9C800D95D0E /* Diatomic-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CEF2D8A189EA9C800D95D0E /* DiatomicTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF2D90189EA9C800D95D0E /* DiatomicTests.m */,
+				3CEF2D8B189EA9C800D95D0E /* Supporting Files */,
+			);
+			path = DiatomicTests;
+			sourceTree = "<group>";
+		};
+		3CEF2D8B189EA9C800D95D0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF2D8C189EA9C800D95D0E /* DiatomicTests-Info.plist */,
+				3CEF2D8D189EA9C800D95D0E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CEF2D57189EA9C800D95D0E /* Diatomic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CEF2D94189EA9C800D95D0E /* Build configuration list for PBXNativeTarget "Diatomic" */;
+			buildPhases = (
+				3CEF2D54189EA9C800D95D0E /* Sources */,
+				3CEF2D55189EA9C800D95D0E /* Frameworks */,
+				3CEF2D56189EA9C800D95D0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Diatomic;
+			productName = Diatomic;
+			productReference = 3CEF2D58189EA9C800D95D0E /* Diatomic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CEF2D82189EA9C800D95D0E /* DiatomicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CEF2D97189EA9C800D95D0E /* Build configuration list for PBXNativeTarget "DiatomicTests" */;
+			buildPhases = (
+				3CEF2D7F189EA9C800D95D0E /* Sources */,
+				3CEF2D80189EA9C800D95D0E /* Frameworks */,
+				3CEF2D81189EA9C800D95D0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CEF2D89189EA9C800D95D0E /* PBXTargetDependency */,
+			);
+			name = DiatomicTests;
+			productName = DiatomicTests;
+			productReference = 3CEF2D83189EA9C800D95D0E /* DiatomicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CEF2D50189EA9C800D95D0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Richard Smith";
+				TargetAttributes = {
+					3CEF2D82189EA9C800D95D0E = {
+						TestTargetID = 3CEF2D57189EA9C800D95D0E;
+					};
+				};
+			};
+			buildConfigurationList = 3CEF2D53189EA9C800D95D0E /* Build configuration list for PBXProject "Diatomic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CEF2D4F189EA9C800D95D0E;
+			productRefGroup = 3CEF2D59189EA9C800D95D0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CEF2D57189EA9C800D95D0E /* Diatomic */,
+				3CEF2D82189EA9C800D95D0E /* DiatomicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CEF2D56189EA9C800D95D0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEF2D7C189EA9C800D95D0E /* Spaceship.png in Resources */,
+				3CEF2D7E189EA9C800D95D0E /* Images.xcassets in Resources */,
+				3CEF2D74189EA9C800D95D0E /* Main_iPad.storyboard in Resources */,
+				3CEF2D71189EA9C800D95D0E /* Main_iPhone.storyboard in Resources */,
+				3CEF2D68189EA9C800D95D0E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEF2D81189EA9C800D95D0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEF2D8F189EA9C800D95D0E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CEF2D54189EA9C800D95D0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEF2D7A189EA9C800D95D0E /* MyScene.m in Sources */,
+				3CEF2D77189EA9C800D95D0E /* ViewController.m in Sources */,
+				3CEF2D6E189EA9C800D95D0E /* AppDelegate.m in Sources */,
+				3CEF2D6A189EA9C800D95D0E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEF2D7F189EA9C800D95D0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEF2D91189EA9C800D95D0E /* DiatomicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CEF2D89189EA9C800D95D0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CEF2D57189EA9C800D95D0E /* Diatomic */;
+			targetProxy = 3CEF2D88189EA9C800D95D0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CEF2D66189EA9C800D95D0E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CEF2D67189EA9C800D95D0E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3CEF2D6F189EA9C800D95D0E /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CEF2D70189EA9C800D95D0E /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		3CEF2D72189EA9C800D95D0E /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CEF2D73189EA9C800D95D0E /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		3CEF2D8D189EA9C800D95D0E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CEF2D8E189EA9C800D95D0E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CEF2D92189EA9C800D95D0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CEF2D93189EA9C800D95D0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CEF2D95189EA9C800D95D0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Diatomic/Diatomic-Prefix.pch";
+				INFOPLIST_FILE = "Diatomic/Diatomic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3CEF2D96189EA9C800D95D0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Diatomic/Diatomic-Prefix.pch";
+				INFOPLIST_FILE = "Diatomic/Diatomic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3CEF2D98189EA9C800D95D0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Diatomic.app/Diatomic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Diatomic/Diatomic-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DiatomicTests/DiatomicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3CEF2D99189EA9C800D95D0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Diatomic.app/Diatomic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Diatomic/Diatomic-Prefix.pch";
+				INFOPLIST_FILE = "DiatomicTests/DiatomicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CEF2D53189EA9C800D95D0E /* Build configuration list for PBXProject "Diatomic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEF2D92189EA9C800D95D0E /* Debug */,
+				3CEF2D93189EA9C800D95D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CEF2D94189EA9C800D95D0E /* Build configuration list for PBXNativeTarget "Diatomic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEF2D95189EA9C800D95D0E /* Debug */,
+				3CEF2D96189EA9C800D95D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3CEF2D97189EA9C800D95D0E /* Build configuration list for PBXNativeTarget "DiatomicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEF2D98189EA9C800D95D0E /* Debug */,
+				3CEF2D99189EA9C800D95D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CEF2D50189EA9C800D95D0E /* Project object */;
+}
