@@ -27,6 +27,8 @@ static const NSUInteger spawnCountDown = 10;
 static const NSUInteger maxChain = 5;
 static const CGFloat nukeDuration = 0.8;
 
+static const NSUInteger differentDiatoms = 9;
+
 // Color cells for debugging
 //#define DEBUG_COLORING
 

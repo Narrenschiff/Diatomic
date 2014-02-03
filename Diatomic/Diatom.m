@@ -20,31 +20,15 @@ static const NSUInteger maxConnections = 2;
 
 -(id)init
 {
-    NSString *diatomName;
-    kind = arc4random() % 5;
+    kind = arc4random() % differentDiatoms;
     //kind = 0;
-    switch (kind) {
-        case 0:
-            diatomName = @"Diatom1";
-            break;
-        case 1:
-            diatomName = @"Diatom2";
-            break;
-        case 2:
-            diatomName = @"Diatom3";
-            break;
-        case 3:
-            diatomName = @"Diatom4";
-            break;
-        case 4:
-            diatomName = @"Diatom5";
-            break;
-        default:
-            diatomName = @"Diatom2";
-            break;
-    }
+    NSString *diatomName = [NSString stringWithFormat:@"Diatom%d", kind + 1];
+
     if (self = [super initWithImageNamed:diatomName]){
-        self.size = CGSizeMake(self.size.width / 2.0, self.size.height / 2.0);
+        CGFloat scaleFactor = 0.95 + (arc4random()%100 / 1000.0);
+        
+        
+        self.size = CGSizeMake(self.size.width * scaleFactor / 2.0, self.size.height * scaleFactor / 2.0);
         self.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:self.size.width / 2.2];
         self.physicsBody.contactTestBitMask = diatomCollisonMask;
         self.physicsBody.collisionBitMask = diatomCollisonMask | borderCollisonMask | deadDiatomCollisonMask;
@@ -86,7 +70,22 @@ static const NSUInteger maxConnections = 2;
     // End red flash by fading back to normal
     [self runAction:[SKAction sequence:@[[SKAction waitForDuration:0.2],
                                          [SKAction colorizeWithColorBlendFactor:0.0 duration:0.5]]]];
+    
+    [self collisionEffect];
 
+}
+
+-(void)collisionEffect
+{
+    SKSpriteNode *effect = [SKSpriteNode spriteNodeWithImageNamed:[NSString stringWithFormat:@"Diatom%d", kind + 1]];
+    effect.alpha = 0.1;
+    effect.zPosition = -50;
+    effect.position = self.position;
+    [effect runAction:[SKAction sequence:@[[SKAction scaleTo:5 duration:0.2],
+                                           [SKAction group:@[[SKAction scaleTo:10 duration:1.0],
+                                                             [SKAction fadeAlphaTo:0 duration:1.0]]],
+                                           [SKAction removeFromParent]]]];
+    [self.scene addChild:effect];
 }
 
 -(void)didMoveApart

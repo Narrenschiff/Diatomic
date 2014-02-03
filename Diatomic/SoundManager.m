@@ -11,7 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 
 static const NSUInteger maxSounds = 1;
-static const NSUInteger maxNotes = 5;
+static const NSUInteger maxNotes = differentDiatoms;
 
 @implementation SoundManager{
     NSMutableArray *notes;

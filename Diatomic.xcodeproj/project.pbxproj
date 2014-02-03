@@ -38,6 +38,14 @@
 		3CEF2DB8189F15FA00D95D0E /* Note4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DB3189F15FA00D95D0E /* Note4.wav */; };
 		3CEF2DBA189F1DF200D95D0E /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DB9189F1DF200D95D0E /* Background.png */; };
 		3CEF2DBC18A0101300D95D0E /* nuke.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DBB18A0101200D95D0E /* nuke.wav */; };
+		3CEF2DBE18A042CD00D95D0E /* Diatom6.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DBD18A042CD00D95D0E /* Diatom6.png */; };
+		3CEF2DC018A0432700D95D0E /* Note6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DBF18A0432700D95D0E /* Note6.wav */; };
+		3CEF2DC318A045C000D95D0E /* Diatom7.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DC118A045C000D95D0E /* Diatom7.png */; };
+		3CEF2DC418A045C000D95D0E /* Note7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DC218A045C000D95D0E /* Note7.wav */; };
+		3CEF2DC618A046D800D95D0E /* Diatom8.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DC518A046D800D95D0E /* Diatom8.png */; };
+		3CEF2DC818A0470F00D95D0E /* Note8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DC718A0470F00D95D0E /* Note8.wav */; };
+		3CEF2DCB18A0486200D95D0E /* Diatom9.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DC918A0486200D95D0E /* Diatom9.png */; };
+		3CEF2DCC18A0486200D95D0E /* Note9.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DCA18A0486200D95D0E /* Note9.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +99,14 @@
 		3CEF2DB3189F15FA00D95D0E /* Note4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Note4.wav; sourceTree = "<group>"; };
 		3CEF2DB9189F1DF200D95D0E /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		3CEF2DBB18A0101200D95D0E /* nuke.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nuke.wav; sourceTree = "<group>"; };
+		3CEF2DBD18A042CD00D95D0E /* Diatom6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Diatom6.png; sourceTree = "<group>"; };
+		3CEF2DBF18A0432700D95D0E /* Note6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Note6.wav; sourceTree = "<group>"; };
+		3CEF2DC118A045C000D95D0E /* Diatom7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Diatom7.png; sourceTree = "<group>"; };
+		3CEF2DC218A045C000D95D0E /* Note7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Note7.wav; sourceTree = "<group>"; };
+		3CEF2DC518A046D800D95D0E /* Diatom8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Diatom8.png; sourceTree = "<group>"; };
+		3CEF2DC718A0470F00D95D0E /* Note8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Note8.wav; sourceTree = "<group>"; };
+		3CEF2DC918A0486200D95D0E /* Diatom9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Diatom9.png; sourceTree = "<group>"; };
+		3CEF2DCA18A0486200D95D0E /* Note9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Note9.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,12 +186,20 @@
 				3CEF2DA5189EFE2700D95D0E /* Diatom3.png */,
 				3CEF2DA8189F0D9B00D95D0E /* Diatom4.png */,
 				3CEF2DAA189F0F2E00D95D0E /* Diatom5.png */,
+				3CEF2DBD18A042CD00D95D0E /* Diatom6.png */,
+				3CEF2DC118A045C000D95D0E /* Diatom7.png */,
+				3CEF2DC518A046D800D95D0E /* Diatom8.png */,
+				3CEF2DC918A0486200D95D0E /* Diatom9.png */,
 				3CEF2DB9189F1DF200D95D0E /* Background.png */,
 				3CEF2DAF189F15FA00D95D0E /* Note2.wav */,
 				3CEF2DB0189F15FA00D95D0E /* Note1.wav */,
 				3CEF2DB1189F15FA00D95D0E /* Note3.wav */,
 				3CEF2DB2189F15FA00D95D0E /* Note5.wav */,
 				3CEF2DB3189F15FA00D95D0E /* Note4.wav */,
+				3CEF2DBF18A0432700D95D0E /* Note6.wav */,
+				3CEF2DC218A045C000D95D0E /* Note7.wav */,
+				3CEF2DC718A0470F00D95D0E /* Note8.wav */,
+				3CEF2DCA18A0486200D95D0E /* Note9.wav */,
 				3CEF2DBB18A0101200D95D0E /* nuke.wav */,
 				3CEF2D7D189EA9C800D95D0E /* Images.xcassets */,
 				3CEF2D64189EA9C800D95D0E /* Supporting Files */,
@@ -289,21 +313,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CEF2DA9189F0D9B00D95D0E /* Diatom4.png in Resources */,
+				3CEF2DC818A0470F00D95D0E /* Note8.wav in Resources */,
 				3CEF2D7E189EA9C800D95D0E /* Images.xcassets in Resources */,
 				3CEF2D74189EA9C800D95D0E /* Main_iPad.storyboard in Resources */,
+				3CEF2DCC18A0486200D95D0E /* Note9.wav in Resources */,
 				3CEF2DB4189F15FA00D95D0E /* Note2.wav in Resources */,
 				3CEF2DA4189EFB3B00D95D0E /* Diatom2.png in Resources */,
 				3CEF2DB8189F15FA00D95D0E /* Note4.wav in Resources */,
 				3CEF2D71189EA9C800D95D0E /* Main_iPhone.storyboard in Resources */,
+				3CEF2DC018A0432700D95D0E /* Note6.wav in Resources */,
 				3CEF2DBC18A0101300D95D0E /* nuke.wav in Resources */,
 				3CEF2D68189EA9C800D95D0E /* InfoPlist.strings in Resources */,
 				3CEF2DA6189EFE2700D95D0E /* Diatom3.png in Resources */,
 				3CEF2DB7189F15FA00D95D0E /* Note5.wav in Resources */,
+				3CEF2DBE18A042CD00D95D0E /* Diatom6.png in Resources */,
 				3CEF2DB5189F15FA00D95D0E /* Note1.wav in Resources */,
 				3CEF2DA2189EFA8100D95D0E /* Diatom1.png in Resources */,
 				3CEF2DBA189F1DF200D95D0E /* Background.png in Resources */,
+				3CEF2DC318A045C000D95D0E /* Diatom7.png in Resources */,
 				3CEF2DB6189F15FA00D95D0E /* Note3.wav in Resources */,
+				3CEF2DC418A045C000D95D0E /* Note7.wav in Resources */,
 				3CEF2DAB189F0F2E00D95D0E /* Diatom5.png in Resources */,
+				3CEF2DC618A046D800D95D0E /* Diatom8.png in Resources */,
+				3CEF2DCB18A0486200D95D0E /* Diatom9.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
