@@ -14,4 +14,6 @@
 
 -(void) playNote:(NSUInteger)n;
 
+-(void)playNuke;
+
 @end

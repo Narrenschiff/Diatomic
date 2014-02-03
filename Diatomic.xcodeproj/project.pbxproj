@@ -37,6 +37,7 @@
 		3CEF2DB7189F15FA00D95D0E /* Note5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DB2189F15FA00D95D0E /* Note5.wav */; };
 		3CEF2DB8189F15FA00D95D0E /* Note4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DB3189F15FA00D95D0E /* Note4.wav */; };
 		3CEF2DBA189F1DF200D95D0E /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DB9189F1DF200D95D0E /* Background.png */; };
+		3CEF2DBC18A0101300D95D0E /* nuke.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DBB18A0101200D95D0E /* nuke.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		3CEF2DB2189F15FA00D95D0E /* Note5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Note5.wav; sourceTree = "<group>"; };
 		3CEF2DB3189F15FA00D95D0E /* Note4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Note4.wav; sourceTree = "<group>"; };
 		3CEF2DB9189F1DF200D95D0E /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		3CEF2DBB18A0101200D95D0E /* nuke.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nuke.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				3CEF2DB1189F15FA00D95D0E /* Note3.wav */,
 				3CEF2DB2189F15FA00D95D0E /* Note5.wav */,
 				3CEF2DB3189F15FA00D95D0E /* Note4.wav */,
+				3CEF2DBB18A0101200D95D0E /* nuke.wav */,
 				3CEF2D7D189EA9C800D95D0E /* Images.xcassets */,
 				3CEF2D64189EA9C800D95D0E /* Supporting Files */,
 			);
@@ -292,6 +295,7 @@
 				3CEF2DA4189EFB3B00D95D0E /* Diatom2.png in Resources */,
 				3CEF2DB8189F15FA00D95D0E /* Note4.wav in Resources */,
 				3CEF2D71189EA9C800D95D0E /* Main_iPhone.storyboard in Resources */,
+				3CEF2DBC18A0101300D95D0E /* nuke.wav in Resources */,
 				3CEF2D68189EA9C800D95D0E /* InfoPlist.strings in Resources */,
 				3CEF2DA6189EFE2700D95D0E /* Diatom3.png in Resources */,
 				3CEF2DB7189F15FA00D95D0E /* Note5.wav in Resources */,

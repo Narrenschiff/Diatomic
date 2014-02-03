@@ -108,6 +108,13 @@ static const NSUInteger maxConnections = 2;
         
         // Make two-way connection
         [self storeConnectionToDiatom:d withJoint:newJoin];
+        
+        NSLog(@"Chain length: %d", [self countChainLength]);
+        
+        if ([self countChainLength] > maxChain) {
+            [self nukeNeigboursComingFromDiatom:self];
+            [[SoundManager theSoundManager] playNuke];
+        }
     }
 }
 
@@ -161,13 +168,12 @@ static const NSUInteger maxConnections = 2;
     // Become alive again so we can join in with making chains
     [self becomeAlive];
     
-
-    
-    
     // Do same in other diatom
     [d severConnectionWithDiatom:self];
 }
 
+
+#pragma mark Methods to query neighbours
 -(bool)isDirectlyConnectedToDiatom:(Diatom *)d
 {
     return ([connections indexOfObject:d] != NSNotFound);
@@ -206,6 +212,42 @@ static const NSUInteger maxConnections = 2;
     
 }
 
+-(NSUInteger)countChainLength
+{
+    return [self countNeighboursComingFromDiatom:self];
+}
+
+-(NSUInteger)countNeighboursComingFromDiatom:(Diatom *)prev
+{
+    NSUInteger total = 1;
+    // Otherwise ask each neighbour (apart from the one we came from) if it's d
+    for (Diatom *neighbour in connections) {
+        // Skip if we're going back on ourselves
+        if (neighbour != prev){
+            total += [neighbour countNeighboursComingFromDiatom:self];
+        }
+    }
+    return total;
+}
+
+#pragma mark destruction logic
+-(void)nukeNeigboursComingFromDiatom:(Diatom *)prev
+{
+    [self nuke];
+    for (Diatom *neighbour in connections) {
+        // Skip if we're going back on ourselves
+        if (neighbour != prev){
+            [neighbour nukeNeigboursComingFromDiatom:self];
+        }
+    }
+}
+
+-(void)nuke
+{
+    [self runAction:[SKAction sequence:@[[SKAction group:@[[SKAction scaleTo:10.0 duration:nukeDuration],
+                                                           [SKAction fadeAlphaTo:0 duration:nukeDuration]]],
+                                         [SKAction removeFromParent]]]];
+}
 
 #pragma mark state transitions
 // Move into inert state

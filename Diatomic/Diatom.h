@@ -37,5 +37,6 @@
 /// Disconnect this diatom and another diatom and dispose of the joint;
 -(void)severConnectionWithDiatom:(Diatom *)d;
 
+-(void)nukeNeigboursComingFromDiatom:(Diatom *)prev;
 
 @end

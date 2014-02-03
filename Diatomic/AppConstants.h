@@ -24,6 +24,9 @@ static const CGFloat refractoryAfterSplitting = 5.0;
 // Delay for finger swipes dropping new cells onto the screen
 static const NSUInteger spawnCountDown = 10;
 
+static const NSUInteger maxChain = 5;
+static const CGFloat nukeDuration = 0.8;
+
 // Color cells for debugging
 //#define DEBUG_COLORING
 

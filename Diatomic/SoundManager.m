@@ -16,6 +16,7 @@ static const NSUInteger maxNotes = 5;
 @implementation SoundManager{
     NSMutableArray *notes;
     NSUInteger *nextOffset;
+    AVAudioPlayer *nukePlayer;
 }
 
 + (id)theSoundManager
@@ -48,7 +49,12 @@ static const NSUInteger maxNotes = 5;
             //nextOffset[i-1] = 0;
             
         }
+        
+        NSURL *noteURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"nuke" ofType:@"wav"]];
+        NSError *error;
+        nukePlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:noteURL error:&error];
     }
+    
     return self;
 }
 
@@ -57,6 +63,11 @@ static const NSUInteger maxNotes = 5;
     //[(AVAudioPlayer *)notes[n + nextOffset[n]] play];
     [(AVAudioPlayer *)notes[n] play];
     //nextOffset[n] = (nextOffset[n] + 1) % maxSounds;
+}
+
+-(void)playNuke
+{
+    [nukePlayer play];
 }
 
 @end
