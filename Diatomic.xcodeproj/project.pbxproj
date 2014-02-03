@@ -18,13 +18,25 @@
 		3CEF2D74189EA9C800D95D0E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2D72189EA9C800D95D0E /* Main_iPad.storyboard */; };
 		3CEF2D77189EA9C800D95D0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF2D76189EA9C800D95D0E /* ViewController.m */; };
 		3CEF2D7A189EA9C800D95D0E /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF2D79189EA9C800D95D0E /* MyScene.m */; };
-		3CEF2D7C189EA9C800D95D0E /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2D7B189EA9C800D95D0E /* Spaceship.png */; };
 		3CEF2D7E189EA9C800D95D0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2D7D189EA9C800D95D0E /* Images.xcassets */; };
 		3CEF2D85189EA9C800D95D0E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEF2D84189EA9C800D95D0E /* XCTest.framework */; };
 		3CEF2D86189EA9C800D95D0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEF2D5B189EA9C800D95D0E /* Foundation.framework */; };
 		3CEF2D87189EA9C800D95D0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEF2D5F189EA9C800D95D0E /* UIKit.framework */; };
 		3CEF2D8F189EA9C800D95D0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2D8D189EA9C800D95D0E /* InfoPlist.strings */; };
 		3CEF2D91189EA9C800D95D0E /* DiatomicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF2D90189EA9C800D95D0E /* DiatomicTests.m */; };
+		3CEF2D9E189EA9FD00D95D0E /* Diatom.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF2D9D189EA9FD00D95D0E /* Diatom.m */; };
+		3CEF2DA2189EFA8100D95D0E /* Diatom1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DA1189EFA8100D95D0E /* Diatom1.png */; };
+		3CEF2DA4189EFB3B00D95D0E /* Diatom2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DA3189EFB3B00D95D0E /* Diatom2.png */; };
+		3CEF2DA6189EFE2700D95D0E /* Diatom3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DA5189EFE2700D95D0E /* Diatom3.png */; };
+		3CEF2DA9189F0D9B00D95D0E /* Diatom4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DA8189F0D9B00D95D0E /* Diatom4.png */; };
+		3CEF2DAB189F0F2E00D95D0E /* Diatom5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DAA189F0F2E00D95D0E /* Diatom5.png */; };
+		3CEF2DAE189F13D500D95D0E /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF2DAD189F13D500D95D0E /* SoundManager.m */; };
+		3CEF2DB4189F15FA00D95D0E /* Note2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DAF189F15FA00D95D0E /* Note2.wav */; };
+		3CEF2DB5189F15FA00D95D0E /* Note1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DB0189F15FA00D95D0E /* Note1.wav */; };
+		3CEF2DB6189F15FA00D95D0E /* Note3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DB1189F15FA00D95D0E /* Note3.wav */; };
+		3CEF2DB7189F15FA00D95D0E /* Note5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DB2189F15FA00D95D0E /* Note5.wav */; };
+		3CEF2DB8189F15FA00D95D0E /* Note4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DB3189F15FA00D95D0E /* Note4.wav */; };
+		3CEF2DBA189F1DF200D95D0E /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF2DB9189F1DF200D95D0E /* Background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,13 +67,28 @@
 		3CEF2D76189EA9C800D95D0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3CEF2D78189EA9C800D95D0E /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		3CEF2D79189EA9C800D95D0E /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
-		3CEF2D7B189EA9C800D95D0E /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		3CEF2D7D189EA9C800D95D0E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3CEF2D83189EA9C800D95D0E /* DiatomicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiatomicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEF2D84189EA9C800D95D0E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3CEF2D8C189EA9C800D95D0E /* DiatomicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiatomicTests-Info.plist"; sourceTree = "<group>"; };
 		3CEF2D8E189EA9C800D95D0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3CEF2D90189EA9C800D95D0E /* DiatomicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiatomicTests.m; sourceTree = "<group>"; };
+		3CEF2D9C189EA9FD00D95D0E /* Diatom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diatom.h; sourceTree = "<group>"; };
+		3CEF2D9D189EA9FD00D95D0E /* Diatom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diatom.m; sourceTree = "<group>"; };
+		3CEF2DA1189EFA8100D95D0E /* Diatom1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Diatom1.png; sourceTree = "<group>"; };
+		3CEF2DA3189EFB3B00D95D0E /* Diatom2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Diatom2.png; sourceTree = "<group>"; };
+		3CEF2DA5189EFE2700D95D0E /* Diatom3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Diatom3.png; sourceTree = "<group>"; };
+		3CEF2DA7189F007400D95D0E /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
+		3CEF2DA8189F0D9B00D95D0E /* Diatom4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Diatom4.png; sourceTree = "<group>"; };
+		3CEF2DAA189F0F2E00D95D0E /* Diatom5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Diatom5.png; sourceTree = "<group>"; };
+		3CEF2DAC189F13D500D95D0E /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
+		3CEF2DAD189F13D500D95D0E /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
+		3CEF2DAF189F15FA00D95D0E /* Note2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Note2.wav; sourceTree = "<group>"; };
+		3CEF2DB0189F15FA00D95D0E /* Note1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Note1.wav; sourceTree = "<group>"; };
+		3CEF2DB1189F15FA00D95D0E /* Note3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Note3.wav; sourceTree = "<group>"; };
+		3CEF2DB2189F15FA00D95D0E /* Note5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Note5.wav; sourceTree = "<group>"; };
+		3CEF2DB3189F15FA00D95D0E /* Note4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Note4.wav; sourceTree = "<group>"; };
+		3CEF2DB9189F1DF200D95D0E /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +150,9 @@
 		3CEF2D63189EA9C800D95D0E /* Diatomic */ = {
 			isa = PBXGroup;
 			children = (
+				3CEF2DA7189F007400D95D0E /* AppConstants.h */,
+				3CEF2DAC189F13D500D95D0E /* SoundManager.h */,
+				3CEF2DAD189F13D500D95D0E /* SoundManager.m */,
 				3CEF2D6C189EA9C800D95D0E /* AppDelegate.h */,
 				3CEF2D6D189EA9C800D95D0E /* AppDelegate.m */,
 				3CEF2D6F189EA9C800D95D0E /* Main_iPhone.storyboard */,
@@ -131,7 +161,19 @@
 				3CEF2D76189EA9C800D95D0E /* ViewController.m */,
 				3CEF2D78189EA9C800D95D0E /* MyScene.h */,
 				3CEF2D79189EA9C800D95D0E /* MyScene.m */,
-				3CEF2D7B189EA9C800D95D0E /* Spaceship.png */,
+				3CEF2D9C189EA9FD00D95D0E /* Diatom.h */,
+				3CEF2D9D189EA9FD00D95D0E /* Diatom.m */,
+				3CEF2DA1189EFA8100D95D0E /* Diatom1.png */,
+				3CEF2DA3189EFB3B00D95D0E /* Diatom2.png */,
+				3CEF2DA5189EFE2700D95D0E /* Diatom3.png */,
+				3CEF2DA8189F0D9B00D95D0E /* Diatom4.png */,
+				3CEF2DAA189F0F2E00D95D0E /* Diatom5.png */,
+				3CEF2DB9189F1DF200D95D0E /* Background.png */,
+				3CEF2DAF189F15FA00D95D0E /* Note2.wav */,
+				3CEF2DB0189F15FA00D95D0E /* Note1.wav */,
+				3CEF2DB1189F15FA00D95D0E /* Note3.wav */,
+				3CEF2DB2189F15FA00D95D0E /* Note5.wav */,
+				3CEF2DB3189F15FA00D95D0E /* Note4.wav */,
 				3CEF2D7D189EA9C800D95D0E /* Images.xcassets */,
 				3CEF2D64189EA9C800D95D0E /* Supporting Files */,
 			);
@@ -243,11 +285,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CEF2D7C189EA9C800D95D0E /* Spaceship.png in Resources */,
+				3CEF2DA9189F0D9B00D95D0E /* Diatom4.png in Resources */,
 				3CEF2D7E189EA9C800D95D0E /* Images.xcassets in Resources */,
 				3CEF2D74189EA9C800D95D0E /* Main_iPad.storyboard in Resources */,
+				3CEF2DB4189F15FA00D95D0E /* Note2.wav in Resources */,
+				3CEF2DA4189EFB3B00D95D0E /* Diatom2.png in Resources */,
+				3CEF2DB8189F15FA00D95D0E /* Note4.wav in Resources */,
 				3CEF2D71189EA9C800D95D0E /* Main_iPhone.storyboard in Resources */,
 				3CEF2D68189EA9C800D95D0E /* InfoPlist.strings in Resources */,
+				3CEF2DA6189EFE2700D95D0E /* Diatom3.png in Resources */,
+				3CEF2DB7189F15FA00D95D0E /* Note5.wav in Resources */,
+				3CEF2DB5189F15FA00D95D0E /* Note1.wav in Resources */,
+				3CEF2DA2189EFA8100D95D0E /* Diatom1.png in Resources */,
+				3CEF2DBA189F1DF200D95D0E /* Background.png in Resources */,
+				3CEF2DB6189F15FA00D95D0E /* Note3.wav in Resources */,
+				3CEF2DAB189F0F2E00D95D0E /* Diatom5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +321,9 @@
 				3CEF2D7A189EA9C800D95D0E /* MyScene.m in Sources */,
 				3CEF2D77189EA9C800D95D0E /* ViewController.m in Sources */,
 				3CEF2D6E189EA9C800D95D0E /* AppDelegate.m in Sources */,
+				3CEF2DAE189F13D500D95D0E /* SoundManager.m in Sources */,
 				3CEF2D6A189EA9C800D95D0E /* main.m in Sources */,
+				3CEF2D9E189EA9FD00D95D0E /* Diatom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,47 +7,154 @@
 //
 
 #import "MyScene.h"
+#import "Diatom.h"
 
-@implementation MyScene
+static const CGFloat paddingRatio = 0.0;
+
+@implementation MyScene{
+    SKNode *diatoms;
+    NSMutableArray *dragTouches;
+    NSMutableArray *dragDiatoms;
+    NSUInteger countdownToNextSpawn;
+}
 
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+        NSLog(@"Size %f %f", size.width, size.height);
         
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        self.physicsWorld.gravity = CGVectorMake(0.0, 0.0);
         
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
+        //bottom
+        SKNode *edge = [[SKNode alloc] init];
+        edge.physicsBody = [SKPhysicsBody bodyWithEdgeFromPoint:CGPointMake(-self.size.width * paddingRatio, -self.size.height * paddingRatio) toPoint:CGPointMake(self.size.width * (1 +paddingRatio), -self.size.height * paddingRatio)];
+        edge.physicsBody.restitution = 1.0;
+        edge.physicsBody.categoryBitMask = borderCollisonMask;
+        [self addChild:edge];
         
-        [self addChild:myLabel];
+        //top
+        edge = [[SKNode alloc] init];
+        edge.physicsBody = [SKPhysicsBody bodyWithEdgeFromPoint:CGPointMake(-self.size.width * paddingRatio, self.size.height * (1 + paddingRatio)) toPoint:CGPointMake(self.size.width * (1 + paddingRatio), self.size.height * (1 + paddingRatio))];
+        edge.physicsBody.restitution = 1.0;
+        edge.physicsBody.categoryBitMask = borderCollisonMask;
+        [self addChild:edge];
+        
+        //left
+        edge = [[SKNode alloc] init];
+        edge.physicsBody = [SKPhysicsBody bodyWithEdgeFromPoint:CGPointMake(-self.size.width * paddingRatio, -self.size.height * paddingRatio) toPoint:CGPointMake(-self.size.width * paddingRatio, self.size.height * (1 + paddingRatio))];
+        edge.physicsBody.restitution = 1.0;
+        edge.physicsBody.categoryBitMask = borderCollisonMask;
+        [self addChild:edge];
+        
+        //right
+        edge = [[SKNode alloc] init];
+        edge.physicsBody = [SKPhysicsBody bodyWithEdgeFromPoint:CGPointMake(self.size.width * (1 + paddingRatio), -self.size.height * paddingRatio) toPoint:CGPointMake(self.size.width * (1 + paddingRatio), self.size.height * (1 + paddingRatio))];
+        edge.physicsBody.restitution = 1.0;
+        edge.physicsBody.categoryBitMask = borderCollisonMask;
+        [self addChild:edge];
+        
+        
+        //Background
+        SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"Background"];
+        background.anchorPoint = CGPointMake(0.5, 0.5);
+        background.zPosition = -100;
+        background.xScale = 1.1;
+        background.yScale = 1.1;
+        [background runAction:[SKAction repeatActionForever:[SKAction rotateByAngle:2 * M_PI duration:40]]];
+        background.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+        [self addChild:background];
+        
+        //diatom root node
+        diatoms = [[SKNode alloc] init];
+        [self addChild:diatoms];
+        
+        self.physicsWorld.contactDelegate = self;
+        
+        dragTouches = [[NSMutableArray alloc] init];
+        dragDiatoms = [[NSMutableArray alloc] init];
+        
+        countdownToNextSpawn = spawnCountDown;
+
     }
     return self;
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
     /* Called when a touch begins */
     
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
         
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
+        Diatom *touchedDiatom = (Diatom *)[diatoms nodeAtPoint:location];
+
+        // if you haven't touched an existing diatom, add a new one
+        if (touchedDiatom == diatoms){
+            Diatom *di = [[Diatom alloc] init];
+            di.position = location;
+            [diatoms addChild:di];
+        }else{
+            [dragTouches addObject:touch];
+            [dragDiatoms addObject:touchedDiatom];
+        }
+    }
+}
+
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    for (UITouch *touch in touches) {
+        CGPoint positionInScene = [touch locationInNode:self];
         
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
+        NSUInteger index = [dragTouches indexOfObject:touch];
+        if (index != NSNotFound) {
+            ((Diatom* )dragDiatoms[index]).position = positionInScene;
+        }else{
+            if (countdownToNextSpawn == 0) {
+            Diatom *di = [[Diatom alloc] init];
+            di.position = positionInScene;
+            [diatoms addChild:di];
+                countdownToNextSpawn = spawnCountDown;
+            }else{
+                countdownToNextSpawn--;
+            }
+
+        }
+    }
+}
+
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    for (UITouch *touch in touches) {
+        NSUInteger index = [dragTouches indexOfObject:touch];
+        if (index != NSNotFound) {
+            [dragTouches removeObjectAtIndex:index];
+            [dragDiatoms removeObjectAtIndex:index];
+        }
     }
 }
 
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
+    for (Diatom *d in diatoms.children) {
+        [d brownianKick];
+    }
+}
+
+#pragma mark Contact Delegate
+-(void)didBeginContact:(SKPhysicsContact *)contact
+{
+    Diatom *diatomA = (Diatom *)contact.bodyA.node;
+    Diatom *diatomB = (Diatom *)contact.bodyB.node;
+    [diatomA didCollide];
+    [diatomB didCollide];
+    [diatomA connectToDiatom:diatomB withContactPoint:contact.contactPoint];
+}
+
+-(void)didEndContact:(SKPhysicsContact *)contact
+{
+    [(Diatom *)contact.bodyA.node didMoveApart];
+    [(Diatom *)contact.bodyB.node didMoveApart];
 }
 
 @end
