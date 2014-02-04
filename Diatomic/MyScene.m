@@ -26,30 +26,11 @@ static const CGFloat paddingRatio = 0.0;
         
         self.physicsWorld.gravity = CGVectorMake(0.0, 0.0);
         
-        //bottom
+        
+        //edge
+        CGRect edges = CGRectMake(-self.size.width * paddingRatio, -self.size.height * paddingRatio, self.size.width * (1 + 2 * paddingRatio), self.size.height * (1 + paddingRatio));
         SKNode *edge = [[SKNode alloc] init];
-        edge.physicsBody = [SKPhysicsBody bodyWithEdgeFromPoint:CGPointMake(-self.size.width * paddingRatio, -self.size.height * paddingRatio) toPoint:CGPointMake(self.size.width * (1 +paddingRatio), -self.size.height * paddingRatio)];
-        edge.physicsBody.restitution = 1.0;
-        edge.physicsBody.categoryBitMask = borderCollisonMask;
-        [self addChild:edge];
-        
-        //top
-        edge = [[SKNode alloc] init];
-        edge.physicsBody = [SKPhysicsBody bodyWithEdgeFromPoint:CGPointMake(-self.size.width * paddingRatio, self.size.height * (1 + paddingRatio)) toPoint:CGPointMake(self.size.width * (1 + paddingRatio), self.size.height * (1 + paddingRatio))];
-        edge.physicsBody.restitution = 1.0;
-        edge.physicsBody.categoryBitMask = borderCollisonMask;
-        [self addChild:edge];
-        
-        //left
-        edge = [[SKNode alloc] init];
-        edge.physicsBody = [SKPhysicsBody bodyWithEdgeFromPoint:CGPointMake(-self.size.width * paddingRatio, -self.size.height * paddingRatio) toPoint:CGPointMake(-self.size.width * paddingRatio, self.size.height * (1 + paddingRatio))];
-        edge.physicsBody.restitution = 1.0;
-        edge.physicsBody.categoryBitMask = borderCollisonMask;
-        [self addChild:edge];
-        
-        //right
-        edge = [[SKNode alloc] init];
-        edge.physicsBody = [SKPhysicsBody bodyWithEdgeFromPoint:CGPointMake(self.size.width * (1 + paddingRatio), -self.size.height * paddingRatio) toPoint:CGPointMake(self.size.width * (1 + paddingRatio), self.size.height * (1 + paddingRatio))];
+        edge.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:edges];
         edge.physicsBody.restitution = 1.0;
         edge.physicsBody.categoryBitMask = borderCollisonMask;
         [self addChild:edge];
